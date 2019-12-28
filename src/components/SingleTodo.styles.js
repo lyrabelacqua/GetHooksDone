@@ -37,6 +37,7 @@ export const Todo = styled.li`
 export const TodoTitle = styled.span`
   line-height: 20px;
   margin: 0 10px 0 8px;
+  text-decoration: ${props => props.done ? 'line-through' : 'none'};
 `;
 
 export const DoneCheckbox = styled.input`

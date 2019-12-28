@@ -10,7 +10,7 @@ export default ({ todo, toggleDoneStatus, deleteTodo }) => (
         toggleDoneStatus(todo.id);
       }}
     />
-    <TodoTitle>{todo.title}</TodoTitle>
+    <TodoTitle done={todo.done}>{todo.title}</TodoTitle>
     <button
       onClick={() => {
         deleteTodo(todo.id);
